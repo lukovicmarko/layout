@@ -30,7 +30,7 @@
         @include font-size($font-size);   
 
         @media (max-width: $bp-mobile){
-            @include font-size(1.75rem);            
+            @include font-size(1.7rem);            
         }        
     }
 

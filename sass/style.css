@@ -87,7 +87,7 @@ h4, p {
 
 @media (max-width: 400px) {
   .card-text p, .container .card--5 p, .container .card--8 p, .container .card--9 p, .container .card--11 p {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
 }
 
