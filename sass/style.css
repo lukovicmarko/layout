@@ -76,7 +76,7 @@ h4, p {
   padding: 3rem 0;
 }
 
-.content .container {
+.container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 3fr 4fr;
@@ -85,5 +85,53 @@ h4, p {
       grid-template-rows: 38rem repeat(2, 40rem) 30rem;
   grid-gap: 1.5rem;
   margin-bottom: 3rem;
+}
+
+.container .card--1 {
+  background-color: #86ddf3;
+  color: #fff;
+  font-size: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card--2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.container .card--3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+}
+
+.container .card--4 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+}
+
+.container .card--10 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3 / 5;
 }
 /*# sourceMappingURL=style.css.map */
