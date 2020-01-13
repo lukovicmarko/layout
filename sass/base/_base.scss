@@ -18,17 +18,12 @@ body {
 }
 
 h1{
-    font-family: 'PT Serif', serif;
+    font-family: $font-primary;
 }
 
 h4,p{
-    font-family: 'PT Sans', sans-serif;
+    font-family: $font-secondary;
 }
-
-.card{
-    border:1px solid black;
-}
-
   
 .card__img {
     width: 100%;

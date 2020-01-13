@@ -3,3 +3,7 @@
     font-weight: $font-weigh;
     letter-spacing: $letter-spacing;
 }
+
+@mixin font-size($font-size) {
+    font-size: $font-size;
+}
