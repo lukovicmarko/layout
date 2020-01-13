@@ -4,11 +4,10 @@
         padding: 1rem;
     }
     &__text{
-        @include font-size(1.5rem);
+        @include font-size($font-size);
         text-align: center;    
         padding: 5rem 0;     
-        @media (max-width: $bp-mobile) {
-            @include font-size(1.4rem);
+        @media (max-width: $bp-mobile) {         
             padding: 2rem 1rem;
         } 
     }   
@@ -106,7 +105,7 @@
     }
     @media(max-width:$bp-mobile){
         grid-template-columns: repeat(2, 1fr);     
-        grid-template-rows: repeat(28,5rem);   
+        grid-template-rows: repeat(29,5rem);   
        
     }
 }

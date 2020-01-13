@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     font-family: $font-primary;
-    
+
     @media (max-width: $bp-mobile){
         font-size: 18rem;
     }   
@@ -30,12 +30,12 @@
         @include font-size($font-size);   
 
         @media (max-width: $bp-mobile){
-            @include font-size(1.5rem);            
+            @include font-size(1.75rem);            
         }        
     }
 
     @media (max-width: $bp-mobile){
-         padding: 0 1rem;           
+         padding: 1rem;           
     }    
 }
 
