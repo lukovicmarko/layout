@@ -1,10 +1,18 @@
 .content{
     padding: 0 15rem;
+    @media (max-width: $bp-mobile) {
+        padding: 1rem;
+    }
     &__text{
         @include font-size(1.5rem);
         text-align: center;    
-        padding: 5rem 0;
+        padding: 5rem 0;     
+        @media (max-width: $bp-mobile) {
+            @include font-size(1.4rem);
+            padding: 2rem 1rem;
+        } 
     }   
+   
 }
 
 .container{
@@ -48,5 +56,57 @@
         &--11{
             @extend .card-text;
         }       
+        @media(max-width: $bp-mobile){
+            &--1{
+                grid-row: 1 / 6;
+            }
+            &--2{
+                grid-row: 6 / 13;
+            }
+            &--3{
+                grid-column: 1;
+                grid-row: 16 / 22;   
+            }
+            &--4{
+                grid-column: 2;
+                grid-row: 24 / 29;     
+            }
+            &--5{
+                grid-column: 2;
+                grid-row: 1;
+            }
+    
+            &--6{
+                grid-column: 1;
+                grid-row: 6 / 10;     
+            }
+
+            &--7{
+                grid-column: 2;
+                grid-row: 13 / 18;     
+            }
+            
+            &--8{
+                grid-column: 1;
+                grid-row: 10 / 14;        
+            }
+            &--9{
+                grid-column: 2;
+                grid-row: 18 / 24;      
+            }
+            &--10{
+                grid-column: 1;
+                grid-row: 22 / 26;  
+            }
+            &--11{
+                grid-column: 1;
+                grid-row: 26 / 30; 
+            }           
+        }
+    }
+    @media(max-width:$bp-mobile){
+        grid-template-columns: repeat(2, 1fr);     
+        grid-template-rows: repeat(28,5rem);   
+       
     }
 }

@@ -5,9 +5,17 @@
     .box{
         &--1{
             margin-left: 4rem;
+
+            @media(max-width: $bp-mobile){
+                order: 1;
+            }
         }
         &--2{
             height: 135%;    
+
+            @media(max-width: $bp-mobile){
+                order: 3;
+            }
         }
         &--3{
             @include font-size(8rem); 
@@ -22,6 +30,16 @@
             }
             .eckis{
                 color: $color-white;
+
+                @media(max-width: $bp-mobile){
+                    color: $background-color;
+                    margin-left: -1rem;
+                }
+            }
+
+            @media(max-width: $bp-mobile){
+                order: 2;
+                font-size: 5rem;
             }
         }
     }     
@@ -34,5 +52,11 @@
         @include font-size($font-size); 
         margin: 2rem 3rem 0 0; 
     }        
+
+    @media(max-width: $bp-mobile){
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem 2rem;       
+    }
 }
 

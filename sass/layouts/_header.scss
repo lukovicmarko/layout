@@ -4,17 +4,26 @@
     background-position: center;
     height: 70vh;
     color: $color-white;
-    opacity: .9;
+    opacity: .9;  
     &__content{
         display: flex;
         flex-direction: column;
-        text-align: center;       
+        text-align: center;          
     }
     &__title{
         @include header-text(6.5rem, 400, .5rem);        
-        margin-top: 8rem;    
+        margin-top: 8rem;   
+        @media (max-width: $bp-mobile) {
+            @include header-text(4rem, 400, normal);   
+        } 
     }
     &__subtitle{
         @include header-text(2.7rem, 600, .2rem);    
+        @media (max-width: $bp-mobile) {
+            @include header-text(1.8rem, 600, normal);   
+        } 
     }      
+    @media (max-width: $bp-mobile) {
+        height: 40vh;
+    }
  }
