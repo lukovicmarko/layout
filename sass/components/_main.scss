@@ -1,0 +1,15 @@
+.content{
+    padding: 0 15rem;
+    &__text{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 3rem 0;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 3fr 4fr;
+        grid-template-rows: 38rem repeat(2,40rem) 30rem; 
+        grid-gap: 1.5rem;
+        margin-bottom: 3rem;  
+    }
+}

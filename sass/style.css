@@ -29,6 +29,10 @@ h4, p {
   font-family: 'PT Sans', sans-serif;
 }
 
+.card {
+  border: 1px solid black;
+}
+
 .header {
   background: url("/images/header.jpg");
   background-size: cover;
@@ -60,5 +64,26 @@ h4, p {
   font-size: 2.7rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
+}
+
+.content {
+  padding: 0 15rem;
+}
+
+.content__text {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 3rem 0;
+}
+
+.content .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr 4fr;
+      grid-template-columns: 2fr 3fr 4fr;
+  -ms-grid-rows: 38rem (40rem)[2] 30rem;
+      grid-template-rows: 38rem repeat(2, 40rem) 30rem;
+  grid-gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */
