@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,EAAE,CAAA;EACE,KAAK,EAAC,GACV;CAAC",
+    "mappings": "",
     "sources": [
-        "style.scss"
+        "style.scss",
+        "base/_fonts.scss",
+        "base/_variables.scss"
     ],
     "names": [],
     "file": "style.css"
