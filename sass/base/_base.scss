@@ -9,10 +9,9 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px
-    @media (max-width: $bp-mobile){
-        html {
-            font-size: 50%;
-        }
+   
+    @media (max-width: $bp-mobile){      
+        font-size: 50%;       
     }
 }
 
@@ -20,6 +19,7 @@ body {
     line-height: 1.6; 
     max-width: 140rem;   
     padding: 0 5rem;  
+   
     @media (max-width: $bp-mobile) {
         padding: 0 1rem;
     }
